@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+</head>
+<body>
+    <header>
+        <h1>Соберите свой гамбургер</h1>
+    </header>
+    <main>
+        <div class="hamburger">
+            <h2>Выберите размер гамбургера</h2>
+            <div class="size">
+                <input type="radio" name="hamburger" id="big" value="big_hamburger">
+                <label for="big">Большой гамбургер (100 руб., 40 кал)</label>
+            </div>
+            <div class="size">
+                <input type="radio" name="hamburger" id="small" value="big_hamburger">
+                <label for="small">Малый гамбургер (50 руб., 20 кал)</label>
+            </div>
+        </div>
+        <div class="addition">
+            <div class="filling">
+                <h3>Выберите начинку</h3>
+                <div class="filling_option">
+                    <input type="radio" name="filling" id="cheese_filling">
+                    <label for="cheese_filling">с сыром (+10 руб., +20 кал)</label>
+                </div>
+                <div class="filling_option">
+                    <input type="radio" name="filling" id="salad_filling">
+                    <label for="salad_filling">с салатом (+20 руб., +5 кал)</label>
+                </div>
+                <div class="filling_option">
+                    <input type="radio" name="filling" id="potato_filling">
+                    <label for="potato_filling">с картофелем (+15 руб., +10 кал)</label>
+                </div>
+            </div>
+            <div class="topping">
+                <h3>Дополнительно</h3>
+                <div class="topping_option">
+                    <input type="checkbox" id="spice" class="topping_type">
+                    <label for="spice">приправа (+15 руб., 0 кал)</label>
+                </div>
+                <div class="topping_option">
+                    <input type="checkbox" id="mayonese" class="topping_type">
+                    <label for="mayonese">майонез (+20 руб., 5 кал)</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="calculate">Считать</button>
+        </div>
+        <div class="total">
+            <div class="info">
+                <h2>Вы выбрали:</h2>
+                <p class="info_string"></p>
+            </div>
+            <div class="price">
+                <h3>ЦЕНА:</h3>
+                <p class="price_info"></p>
+            </div>
+            <div class="energy">
+                <h3>КАЛЛОРИИ:</h3>
+                <p class="energy_info"></p>
+            </div>
+        </div>
+    </main>
+    <script src="hamburger.js"></script>
+</body>
+</html>
